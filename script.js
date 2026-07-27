@@ -20,8 +20,6 @@ row.innerHTML=`
 
 <td><input></td>
 
-<td><input></td>
-
 <td>
 <input type="time" class="start">
 </td>
