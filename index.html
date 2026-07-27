@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Training Quality Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Training Quality Tracker</h2>
+
+<div class="header">
+
+<label>
+Trainee:
+<input id="trainee">
+</label>
+
+<label>
+Date:
+<input type="date" id="date">
+</label>
+
+<div>
+<b>Total Cases Processed:</b>
+<span id="caseCount">0</span>
+</div>
+
+<div>
+<b>Total Errors:</b>
+<span id="errors">0</span>
+</div>
+
+<div>
+<b>Error Rate:</b>
+<span id="errorRate">0%</span>
+</div>
+
+<div>
+<b>Total Time:</b>
+<span id="totalTime">0</span> hours
+</div>
+
+</div>
+
+
+<table id="trainingTable">
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+<th>Department</th>
+<th>Envelope #</th>
+<th>Case #</th>
+<th>Case Name</th>
+<th>Start Time</th>
+<th>End Time</th>
+<th>Total Minutes</th>
+<th>Case Type</th>
+<th>Trainee Comment</th>
+<th>Error/Fix</th>
+<th>QC'd By</th>
+<th>QC Comment</th>
+<th>Corrections Verified</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="rows">
+
+
+</tbody>
+
+</table>
+
+
+<button onclick="addRow()">
+Add Case
+</button>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
